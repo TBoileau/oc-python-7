@@ -20,6 +20,9 @@ pyflakes==2.4.0
 pylint==2.11.1
 pyparsing==3.0.1
 pytest==6.2.5
+pytest-cov==3.0.0
+pytest-cover==3.0.0
+pytest-coverage==0.0
 regex==2021.10.23
 toml==0.10.2
 tomli==1.2.2

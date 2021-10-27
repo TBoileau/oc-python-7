@@ -23,3 +23,6 @@ analyse:
 	$(PYTHON) -m flake8 --max-line-length=120 ./src
 	$(PYTHON) -m pylint ./src
 	$(PYTHON) -m pycodestyle --max-line-length=120 ./src
+
+tests:
+	$(PYTHON) -m pytest --cov=./src --cov-report=html -s

@@ -5,9 +5,9 @@ from lib.knapsack.item import Item
 from lib.knapsack.knapsack_resolver_interface import KnapsackResolverInterface
 
 
-class Knapsack(KnapsackResolverInterface):
+class GreedyKnapsack(KnapsackResolverInterface):
     """
-    Class Knapsack
+    Class GreedyKnapsack
     """
 
     def __init__(self):

@@ -2,11 +2,11 @@
 from typing import List
 
 from lib.knapsack.item import Item
-from lib.knapsack.knapsack import Knapsack
+from src.knapsack.greedy_knapsack import GreedyKnapsack
 
 
-def test_resolve_knapsack():
-    knapsack: Knapsack = Knapsack()
+def test_resolve_greedy_knapsack():
+    knapsack: GreedyKnapsack = GreedyKnapsack()
     knapsack.add(Item('1', 1, 10))
     knapsack.add(Item('2', 5, 50))
     knapsack.add(Item('3', 3, 20))

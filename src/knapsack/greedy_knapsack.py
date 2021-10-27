@@ -1,25 +1,16 @@
 """Imported modules/packages"""
-from typing import List
+from typing import List, Tuple
 
+from lib.knapsack.abstract_knapsack import AbstractKnapsack
 from lib.knapsack.item import Item
-from lib.knapsack.knapsack_resolver_interface import KnapsackResolverInterface
 
 
-class GreedyKnapsack(KnapsackResolverInterface):
+class GreedyKnapsack(AbstractKnapsack):
     """
     Class GreedyKnapsack
     """
 
-    def __init__(self):
-        """
-        Constructor
-        """
-        self.items: List[Item] = []
-
-    def add(self, item: Item):
-        self.items.append(item)
-
-    def resolve(self, volume: int) -> List[Item]:
+    def resolve(self, volume: int) -> Tuple[List[Item], int]:
         self.items.sort(reverse=True)
         total_value: int = 0
         items: List[Item] = []
@@ -28,4 +19,4 @@ class GreedyKnapsack(KnapsackResolverInterface):
                 volume -= item.weight
                 total_value += item.value
                 items.append(item)
-        return items
+        return items, total_value

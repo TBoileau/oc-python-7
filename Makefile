@@ -28,6 +28,10 @@ tests:
 	make clean
 	$(PYTHON) -m pytest --profile --cov=./src --cov-report=html -s
 
+run:
+	make clean
+	$(PYTHON) main.py
+
 clean:
 	rm -rf __pycache__
 	rm -rf .pytest_cache

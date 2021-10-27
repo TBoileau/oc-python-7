@@ -1,11 +1,11 @@
 """Imported modules/packages"""
 from typing import List
 
-from src.knapsack.item import Item
-from src.knapsack.resolver_interface import ResolverInterface
+from lib.knapsack.item import Item
+from lib.knapsack.knapsack_resolver_interface import KnapsackResolverInterface
 
 
-class Knapsack(ResolverInterface):
+class Knapsack(KnapsackResolverInterface):
     """
     Class Knapsack
     """

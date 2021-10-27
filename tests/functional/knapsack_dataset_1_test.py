@@ -37,7 +37,7 @@ def test_resolve_knapsack_dataset_1_with_greedy():
     total_weight = 0
     for item in items:
         total_weight += item.weight
-    assert 500 >= total_weight
+    assert 50000 >= total_weight
 
 
 def test_resolve_knapsack_dataset_1_with_dynamic_programming():
@@ -65,4 +65,4 @@ def test_resolve_knapsack_dataset_1_with_dynamic_programming():
     total_weight = 0
     for item in items:
         total_weight += item.weight
-    assert 500 >= total_weight
+    assert 50000 >= total_weight

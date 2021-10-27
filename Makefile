@@ -12,7 +12,7 @@ prepare:
 	python3 -m venv $(VENV_NAME)
 
 install:
-	pip install --no-cache-dir wheel pkg_resources
+	pip install --no-cache-dir wheel
 	${PYTHON} -m pip install -r requirements.txt
 
 fix:

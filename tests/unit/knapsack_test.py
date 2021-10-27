@@ -1,10 +1,8 @@
 """Imported modules/packages"""
 from typing import List
 
-import pytest
-
-from src.knapsack.item import Item
-from src.knapsack.knapsack import Knapsack
+from lib.knapsack.item import Item
+from lib.knapsack.knapsack import Knapsack
 
 
 def test_resolve_knapsack():

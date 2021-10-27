@@ -2,10 +2,10 @@
 from abc import ABC
 from typing import List
 
-from src.knapsack.item import Item
+from lib.knapsack.item import Item
 
 
-class ResolverInterface(ABC):
+class KnapsackResolverInterface(ABC):
     """
     Interface Resolver
     """

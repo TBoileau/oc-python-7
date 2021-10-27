@@ -5,9 +5,9 @@ from lib.knapsack.abstract_knapsack import AbstractKnapsack
 from lib.knapsack.item import Item
 
 
-class NaiveRecursiveKnapsack(AbstractKnapsack):
+class NaiveRecursive(AbstractKnapsack):
     """
-    Class GreedyKnapsack
+    Class NaiveRecursive
     """
 
     def resolve(self, volume: int) -> Tuple[List[Item], int]:
@@ -26,9 +26,7 @@ class NaiveRecursiveKnapsack(AbstractKnapsack):
         if self.items[number_of_items - 1].weight > volume:
             return self.__recursive(volume, number_of_items - 1)
 
-        new_items, new_total = self.__recursive(
-            volume - self.items[number_of_items - 1].weight, number_of_items - 1
-        )
+        new_items, new_total = self.__recursive(volume - self.items[number_of_items - 1].weight, number_of_items - 1)
         new_items.append(self.items[number_of_items - 1])
         new_total += self.items[number_of_items - 1].value
         last_items, last_total = self.__recursive(volume, number_of_items - 1)

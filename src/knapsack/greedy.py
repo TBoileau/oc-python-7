@@ -5,9 +5,9 @@ from lib.knapsack.abstract_knapsack import AbstractKnapsack
 from lib.knapsack.item import Item
 
 
-class GreedyKnapsack(AbstractKnapsack):
+class Greedy(AbstractKnapsack):
     """
-    Class GreedyKnapsack
+    Class Greedy
     """
 
     def resolve(self, volume: int) -> Tuple[List[Item], int]:

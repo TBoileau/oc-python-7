@@ -6,9 +6,9 @@ from lib.knapsack.abstract_knapsack import AbstractKnapsack
 from lib.knapsack.item import Item
 
 
-class DynamicProgrammingKnapsack(AbstractKnapsack):
+class DynamicProgramming(AbstractKnapsack):
     """
-    Class DynamicProgrammingKnapsack
+    Class DynamicProgramming
     """
 
     def resolve(self, volume: int) -> Tuple[List[Item], int]:

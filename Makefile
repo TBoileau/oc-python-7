@@ -14,3 +14,12 @@ prepare:
 install:
 	pip install --no-cache-dir wheel
 	${PYTHON} -m pip install -r requirements.txt
+
+fix:
+	$(PYTHON) -m black --line-length 120 ./src
+	$(PYTHON) -m autopep8 --recursive --in-place --aggressive --max-line-length=120 ./src/*
+
+analyse:
+	$(PYTHON) -m flake8 --max-line-length=120 ./src
+	$(PYTHON) -m pylint ./src
+	$(PYTHON) -m pycodestyle --max-line-length=120 ./src

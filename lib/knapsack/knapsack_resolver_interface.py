@@ -1,6 +1,6 @@
 """Imported modules/packages"""
 from abc import ABC
-from typing import List
+from typing import List, Tuple
 
 from lib.knapsack.item import Item
 
@@ -17,7 +17,7 @@ class KnapsackResolverInterface(ABC):
         :return:
         """
 
-    def resolve(self, volume: int) -> List[Item]:
+    def resolve(self, volume: int) -> Tuple[List[Item], int]:
         """
         Resolve knapsack algorithm and return list of items
 

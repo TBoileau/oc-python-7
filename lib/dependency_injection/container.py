@@ -5,8 +5,6 @@ from types import ModuleType
 from typing import Any, Dict, List, Type, Union
 
 from lib.dependency_injection.container_interface import ContainerInterface
-from lib.knapsack.knapsack import Knapsack
-from lib.knapsack.knapsack_resolver_interface import KnapsackResolverInterface
 
 
 class Container(ContainerInterface):
@@ -21,7 +19,6 @@ class Container(ContainerInterface):
     def __init__(self):
         self.__instances["container"] = self
         self.alias(ContainerInterface, Container)
-        self.alias(KnapsackResolverInterface, Knapsack)
 
     @staticmethod
     def get_type(name: Union[Type, str]) -> str:

@@ -11,16 +11,16 @@ from src.knapsack.dynamic_programming_knapsack import DynamicProgrammingKnapsack
 from src.knapsack.greedy_knapsack import GreedyKnapsack
 
 
-def test_resolve_knapsack_dataset_1_with_greedy():
+def test_resolve_knapsack_dataset_0_with_greedy():
     kernel: Kernel = AppKernel()
     kernel.run()
     container: ContainerInterface = kernel.container
     knapsack: KnapsackResolverInterface = container.get(GreedyKnapsack)
     reader: ReaderInterface = container.get(ReaderInterface)
 
-    data = reader.read(os.path.join(os.getcwd(), "fixtures", "dataset_1.csv"))
+    data = reader.read(os.path.join(os.getcwd(), "fixtures", "dataset_0.csv"))
 
-    assert len(data) == 1001
+    assert len(data) == 20
 
     for row in data:
         action_price: int = int(float(row['price']) * 100)
@@ -32,24 +32,23 @@ def test_resolve_knapsack_dataset_1_with_greedy():
 
     items, total = knapsack.resolve(50000)
 
-    assert len(items) == 3
-
+    assert len(items) == 8
     total_weight = 0
     for item in items:
         total_weight += item.weight
     assert 50000 >= total_weight
 
 
-def test_resolve_knapsack_dataset_1_with_dynamic_programming():
+def test_resolve_knapsack_dataset_0_with_dynamic_programming():
     kernel: Kernel = AppKernel()
     kernel.run()
     container: ContainerInterface = kernel.container
     knapsack: KnapsackResolverInterface = container.get(DynamicProgrammingKnapsack)
     reader: ReaderInterface = container.get(ReaderInterface)
 
-    data = reader.read(os.path.join(os.getcwd(), "fixtures", "dataset_1.csv"))
+    data = reader.read(os.path.join(os.getcwd(), "fixtures", "dataset_0.csv"))
 
-    assert len(data) == 1001
+    assert len(data) == 20
 
     for row in data:
         action_price: int = int(float(row['price']) * 100)
@@ -60,8 +59,7 @@ def test_resolve_knapsack_dataset_1_with_dynamic_programming():
 
     items, total = knapsack.resolve(50000)
 
-    assert len(items) == 22
-
+    assert len(items) == 10
     total_weight = 0
     for item in items:
         total_weight += item.weight

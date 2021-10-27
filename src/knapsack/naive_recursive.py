@@ -26,9 +26,10 @@ class NaiveRecursiveKnapsack(AbstractKnapsack):
         if self.items[number_of_items - 1].weight > volume:
             return self.__recursive(volume, number_of_items - 1)
 
-        else:
-            new_items, new_total = self.__recursive(volume - self.items[number_of_items - 1].weight, number_of_items - 1)
-            new_items.append(self.items[number_of_items - 1])
-            new_total += self.items[number_of_items - 1].value
-            last_items, last_total = self.__recursive(volume, number_of_items - 1)
-            return (last_items, last_total) if last_total > new_total else (new_items, new_total)
+        new_items, new_total = self.__recursive(
+            volume - self.items[number_of_items - 1].weight, number_of_items - 1
+        )
+        new_items.append(self.items[number_of_items - 1])
+        new_total += self.items[number_of_items - 1].value
+        last_items, last_total = self.__recursive(volume, number_of_items - 1)
+        return (last_items, last_total) if last_total > new_total else (new_items, new_total)

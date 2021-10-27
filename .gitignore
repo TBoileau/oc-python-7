@@ -111,7 +111,6 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-
 # Spyder project settings
 .spyderproject
 .spyproject
@@ -137,3 +136,4 @@ dmypy.json
 cython_debug/
 *.json
 !fixtures.json
+prof/

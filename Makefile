@@ -26,7 +26,7 @@ analyse:
 
 tests:
 	make clean
-	$(PYTHON) -m pytest --cov=./src --cov-report=html -s
+	$(PYTHON) -m pytest --profile-svg --cov=./src --cov-report=html -s
 
 clean:
 	rm -rf __pycache__

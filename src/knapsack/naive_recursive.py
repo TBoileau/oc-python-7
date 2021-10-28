@@ -10,6 +10,10 @@ class NaiveRecursive(AbstractKnapsack):
     Class NaiveRecursive
     """
 
+    @staticmethod
+    def name() -> str:
+        return "naive_recursive"
+
     def resolve(self, volume: int) -> Tuple[List[Item], int]:
         return self.__recursive(volume, len(self.items))
 

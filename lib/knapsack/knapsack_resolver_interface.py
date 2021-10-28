@@ -1,14 +1,22 @@
 """Imported modules/packages"""
 from abc import ABC
-from typing import List
+from typing import List, Tuple
 
-from src.knapsack.item import Item
+from lib.knapsack.item import Item
 
 
-class ResolverInterface(ABC):
+class KnapsackResolverInterface(ABC):
     """
     Interface Resolver
     """
+
+    @staticmethod
+    def name() -> str:
+        """
+        Get name in knapsack
+        :param item:
+        :return:
+        """
 
     def add(self, item: Item):
         """
@@ -17,7 +25,7 @@ class ResolverInterface(ABC):
         :return:
         """
 
-    def resolve(self, volume: int) -> List[Item]:
+    def resolve(self, volume: int) -> Tuple[List[Item], int]:
         """
         Resolve knapsack algorithm and return list of items
 

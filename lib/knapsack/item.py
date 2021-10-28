@@ -1,4 +1,5 @@
 """Imported modules/packages"""
+from typing import Union
 
 
 class Item:
@@ -6,7 +7,7 @@ class Item:
     Class Item
     """
 
-    def __init__(self, name: str, weight: int, value: int):
+    def __init__(self, name: str, weight: int, value: Union[int,float]):
         """
         Constructor
         :param name:
@@ -15,7 +16,7 @@ class Item:
         """
         self.name: str = name
         self.weight: int = weight
-        self.value: int = value
+        self.value: Union[int,float] = value
 
     @property
     def ratio(self) -> int:

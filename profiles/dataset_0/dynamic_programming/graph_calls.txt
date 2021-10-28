@@ -1,0 +1,22 @@
+Dataset : dataset_0
+Algorithm : dynamic_programming
+Graph calls
+         6300359 function calls (5250296 primitive calls) in 1.991 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+1050043/1    0.720    0.000    1.293    1.293 copy.py:128(deepcopy)
+  1050021    0.059    0.000    0.059    0.000 copy.py:182(_deepcopy_atomic)
+     22/1    0.263    0.012    1.293    1.293 copy.py:200(_deepcopy_list)
+       22    0.000    0.000    0.000    0.000 copy.py:242(_keep_alive)
+        1    0.698    0.698    2.030    2.030 dynamic_programming.py:18(resolve)
+        1    0.000    0.000    0.039    0.039 dynamic_programming.py:20(<listcomp>)
+       10    0.000    0.000    0.000    0.000 dynamic_programming.py:41(<lambda>)
+  1050088    0.062    0.000    0.062    0.000 {built-in method builtins.id}
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.len}
+  1050063    0.060    0.000    0.060    0.000 {method 'append' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+  2100086    0.130    0.000    0.130    0.000 {method 'get' of 'dict' objects}
+
+

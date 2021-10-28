@@ -10,6 +10,10 @@ class Greedy(AbstractKnapsack):
     Class Greedy
     """
 
+    @staticmethod
+    def name() -> str:
+        return "greedy"
+
     def resolve(self, volume: int) -> Tuple[List[Item], int]:
         self.items.sort(reverse=True)
         total_value: int = 0

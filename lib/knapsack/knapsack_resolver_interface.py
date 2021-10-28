@@ -10,6 +10,14 @@ class KnapsackResolverInterface(ABC):
     Interface Resolver
     """
 
+    @staticmethod
+    def name() -> str:
+        """
+        Get name in knapsack
+        :param item:
+        :return:
+        """
+
     def add(self, item: Item):
         """
         Add item in knapsack

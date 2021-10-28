@@ -3,6 +3,9 @@
 # AlgoInvest&Trade
 
 ## Installation
+Pré-requis (si vous souhaitez générer les profiles) :
+* Installer `graphviz`
+
 Dans un premier temps, cloner le repository :
 ```
 git clone https://github.com/TBoileau/oc-python-7.git

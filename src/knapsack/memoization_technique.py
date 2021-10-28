@@ -11,6 +11,10 @@ class MemoizationTechnique(AbstractKnapsack):
     Class MemoizationTechnique
     """
 
+    @staticmethod
+    def name() -> str:
+        return "memoization_technique"
+
     def resolve(self, volume: int) -> Tuple[List[Item], int]:
         totals: List[List] = [[-1 for i in range(volume + 1)] for j in range(len(self.items) + 1)]
         items: List[List] = copy.deepcopy(totals)

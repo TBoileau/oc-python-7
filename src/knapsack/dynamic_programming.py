@@ -11,6 +11,10 @@ class DynamicProgramming(AbstractKnapsack):
     Class DynamicProgramming
     """
 
+    @staticmethod
+    def name() -> str:
+        return "dynamic_programming"
+
     def resolve(self, volume: int) -> Tuple[List[Item], int]:
         number_of_items: int = len(self.items)
         values: List[List] = [[0 for x in range(volume + 1)] for x in range(number_of_items + 1)]

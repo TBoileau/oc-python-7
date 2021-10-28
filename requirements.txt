@@ -2,8 +2,10 @@ astroid==2.8.4
 attrs==21.2.0
 autopep8==1.6.0
 black==21.9b0
+bottle==0.12.19
 click==8.0.3
 coverage==6.0.2
+CProfileV==1.0.7
 flake8==4.0.1
 gprof2dot==2021.2.21
 iniconfig==1.1.1
@@ -29,5 +31,6 @@ regex==2021.10.23
 six==1.16.0
 toml==0.10.2
 tomli==1.2.2
+tornado==6.1
 typing-extensions==3.10.0.2
 wrapt==1.13.2

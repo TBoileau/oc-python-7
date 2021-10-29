@@ -31,6 +31,20 @@ Lancer la suite de tests :
 make tests
 ```
 
+## Analyse du code
+Dans un premier temps, pensez à éxecuter la commande qui permet de nettoyer le code :
+```
+make fix
+```
+
+Lancer les outils d'analyse statique :
+```
+make analyse
+```
+
+## Rapport
+Retrouver le rapport générer par le programme [ici](https://tboileau.github.io/oc-python-7/).
+
 ## Contribuer
 Veuillez prendre un moment pour lire le [guide sur la contribution](CONTRIBUTING.md).
 

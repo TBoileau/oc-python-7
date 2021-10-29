@@ -130,7 +130,7 @@
                         Graph calls
                     </div>
                     <div class="card-body flex-grow-1 d-flex justify-content-center align-items-center">
-                        <img class="mw-100" src="/{{dataset_name}}/{{algorithm}}/graph_calls.png">
+                        <img class="mw-100" src="{{url}}/{{dataset_name}}/{{algorithm}}/graph_calls.png">
                     </div>
                 </div>
             </div>
@@ -171,7 +171,10 @@
             document.querySelector('#dataset-template').innerHTML,
             {
                 dataset_name: name,
-                dataset
+                dataset,
+                url: location.hostname === "localhost" || location.hostname === "127.0.0.1"
+                    ? ''
+                    : 'https://github.com/TBoileau/oc-python-7/raw/develop/docs'
             }
         );
     }

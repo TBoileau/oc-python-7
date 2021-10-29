@@ -1,0 +1,841 @@
+{
+  "dataset_0": [
+    {
+      "algorithm": "dynamic_programming",
+      "execution_time": 1.772,
+      "items": [
+        {
+          "name": "Action-10",
+          "price": 34.0,
+          "profit": 27.0
+        },
+        {
+          "name": "Action-11",
+          "price": 42.0,
+          "profit": 17.0
+        },
+        {
+          "name": "Action-13",
+          "price": 38.0,
+          "profit": 23.0
+        },
+        {
+          "name": "Action-18",
+          "price": 10.0,
+          "profit": 14.0
+        },
+        {
+          "name": "Action-19",
+          "price": 24.0,
+          "profit": 21.0
+        },
+        {
+          "name": "Action-20",
+          "price": 114.0,
+          "profit": 18.0
+        },
+        {
+          "name": "Action-4",
+          "price": 70.0,
+          "profit": 20.0
+        },
+        {
+          "name": "Action-5",
+          "price": 60.0,
+          "profit": 17.0
+        },
+        {
+          "name": "Action-6",
+          "price": 80.0,
+          "profit": 25.0
+        },
+        {
+          "name": "Action-8",
+          "price": 26.0,
+          "profit": 11.0
+        }
+      ],
+      "cost": 498.0,
+      "returns": 99.08
+    },
+    {
+      "algorithm": "optimized_dynamic_programming",
+      "execution_time": 0.241,
+      "items": [
+        {
+          "name": "Action-10",
+          "price": 34.0,
+          "profit": 27.0
+        },
+        {
+          "name": "Action-11",
+          "price": 42.0,
+          "profit": 17.0
+        },
+        {
+          "name": "Action-13",
+          "price": 38.0,
+          "profit": 23.0
+        },
+        {
+          "name": "Action-18",
+          "price": 10.0,
+          "profit": 14.0
+        },
+        {
+          "name": "Action-19",
+          "price": 24.0,
+          "profit": 21.0
+        },
+        {
+          "name": "Action-20",
+          "price": 114.0,
+          "profit": 18.0
+        },
+        {
+          "name": "Action-4",
+          "price": 70.0,
+          "profit": 20.0
+        },
+        {
+          "name": "Action-5",
+          "price": 60.0,
+          "profit": 17.0
+        },
+        {
+          "name": "Action-6",
+          "price": 80.0,
+          "profit": 25.0
+        },
+        {
+          "name": "Action-8",
+          "price": 26.0,
+          "profit": 11.0
+        }
+      ],
+      "cost": 498.0,
+      "returns": 99.08
+    },
+    {
+      "algorithm": "greedy",
+      "execution_time": 0.0,
+      "items": [
+        {
+          "name": "Action-10",
+          "price": 34.0,
+          "profit": 27.0
+        },
+        {
+          "name": "Action-12",
+          "price": 110.0,
+          "profit": 9.0
+        },
+        {
+          "name": "Action-16",
+          "price": 8.0,
+          "profit": 8.0
+        },
+        {
+          "name": "Action-19",
+          "price": 24.0,
+          "profit": 21.0
+        },
+        {
+          "name": "Action-20",
+          "price": 114.0,
+          "profit": 18.0
+        },
+        {
+          "name": "Action-4",
+          "price": 70.0,
+          "profit": 20.0
+        },
+        {
+          "name": "Action-5",
+          "price": 60.0,
+          "profit": 17.0
+        },
+        {
+          "name": "Action-6",
+          "price": 80.0,
+          "profit": 25.0
+        }
+      ],
+      "cost": 500.0,
+      "returns": 89.48
+    },
+    {
+      "algorithm": "naive_recursive",
+      "execution_time": 0.876,
+      "items": [
+        {
+          "name": "Action-10",
+          "price": 34.0,
+          "profit": 27.0
+        },
+        {
+          "name": "Action-11",
+          "price": 42.0,
+          "profit": 17.0
+        },
+        {
+          "name": "Action-13",
+          "price": 38.0,
+          "profit": 23.0
+        },
+        {
+          "name": "Action-18",
+          "price": 10.0,
+          "profit": 14.0
+        },
+        {
+          "name": "Action-19",
+          "price": 24.0,
+          "profit": 21.0
+        },
+        {
+          "name": "Action-20",
+          "price": 114.0,
+          "profit": 18.0
+        },
+        {
+          "name": "Action-4",
+          "price": 70.0,
+          "profit": 20.0
+        },
+        {
+          "name": "Action-5",
+          "price": 60.0,
+          "profit": 17.0
+        },
+        {
+          "name": "Action-6",
+          "price": 80.0,
+          "profit": 25.0
+        },
+        {
+          "name": "Action-8",
+          "price": 26.0,
+          "profit": 11.0
+        }
+      ],
+      "cost": 498.0,
+      "returns": 99.08
+    },
+    {
+      "algorithm": "memoization_technique",
+      "execution_time": 3.46,
+      "items": [
+        {
+          "name": "Action-10",
+          "price": 34.0,
+          "profit": 27.0
+        },
+        {
+          "name": "Action-11",
+          "price": 42.0,
+          "profit": 17.0
+        },
+        {
+          "name": "Action-13",
+          "price": 38.0,
+          "profit": 23.0
+        },
+        {
+          "name": "Action-18",
+          "price": 10.0,
+          "profit": 14.0
+        },
+        {
+          "name": "Action-19",
+          "price": 24.0,
+          "profit": 21.0
+        },
+        {
+          "name": "Action-20",
+          "price": 114.0,
+          "profit": 18.0
+        },
+        {
+          "name": "Action-4",
+          "price": 70.0,
+          "profit": 20.0
+        },
+        {
+          "name": "Action-5",
+          "price": 60.0,
+          "profit": 17.0
+        },
+        {
+          "name": "Action-6",
+          "price": 80.0,
+          "profit": 25.0
+        },
+        {
+          "name": "Action-8",
+          "price": 26.0,
+          "profit": 11.0
+        }
+      ],
+      "cost": 498.0,
+      "returns": 99.08
+    }
+  ],
+  "dataset_1": [
+    {
+      "algorithm": "dynamic_programming",
+      "execution_time": 88.497,
+      "items": [
+        {
+          "name": "Share-EMOV",
+          "price": 8.89,
+          "profit": 39.48
+        },
+        {
+          "name": "Share-FKJW",
+          "price": 21.08,
+          "profit": 39.75
+        },
+        {
+          "name": "Share-GHIZ",
+          "price": 28.0,
+          "profit": 39.86
+        },
+        {
+          "name": "Share-GIAJ",
+          "price": 10.75,
+          "profit": 39.81
+        },
+        {
+          "name": "Share-GTQK",
+          "price": 15.4,
+          "profit": 39.94
+        },
+        {
+          "name": "Share-IFCP",
+          "price": 29.23,
+          "profit": 39.86
+        },
+        {
+          "name": "Share-KMTG",
+          "price": 23.21,
+          "profit": 39.94
+        },
+        {
+          "name": "Share-KZBL",
+          "price": 28.99,
+          "profit": 39.12
+        },
+        {
+          "name": "Share-LGWG",
+          "price": 31.41,
+          "profit": 39.48
+        },
+        {
+          "name": "Share-LPDM",
+          "price": 39.35,
+          "profit": 39.72
+        },
+        {
+          "name": "Share-LRBZ",
+          "price": 32.9,
+          "profit": 39.94
+        },
+        {
+          "name": "Share-MLGM",
+          "price": 0.01,
+          "profit": 0.0
+        },
+        {
+          "name": "Share-MTLR",
+          "price": 16.48,
+          "profit": 39.93
+        },
+        {
+          "name": "Share-NHWA",
+          "price": 29.18,
+          "profit": 39.75
+        },
+        {
+          "name": "Share-QLMK",
+          "price": 17.38,
+          "profit": 39.47
+        },
+        {
+          "name": "Share-QQTU",
+          "price": 33.19,
+          "profit": 39.59
+        },
+        {
+          "name": "Share-SKKC",
+          "price": 24.87,
+          "profit": 39.49
+        },
+        {
+          "name": "Share-UEZB",
+          "price": 24.87,
+          "profit": 39.4
+        },
+        {
+          "name": "Share-USSR",
+          "price": 25.62,
+          "profit": 39.54
+        },
+        {
+          "name": "Share-WPLI",
+          "price": 34.64,
+          "profit": 39.9
+        },
+        {
+          "name": "Share-XJMO",
+          "price": 9.39,
+          "profit": 39.94
+        },
+        {
+          "name": "Share-ZSDE",
+          "price": 15.11,
+          "profit": 39.84
+        }
+      ],
+      "cost": 499.95,
+      "returns": 198.43
+    },
+    {
+      "algorithm": "optimized_dynamic_programming",
+      "execution_time": 7.828,
+      "items": [
+        {
+          "name": "Share-EMOV",
+          "price": 8.89,
+          "profit": 39.48
+        },
+        {
+          "name": "Share-FKJW",
+          "price": 21.08,
+          "profit": 39.75
+        },
+        {
+          "name": "Share-GHIZ",
+          "price": 28.0,
+          "profit": 39.86
+        },
+        {
+          "name": "Share-GIAJ",
+          "price": 10.75,
+          "profit": 39.81
+        },
+        {
+          "name": "Share-GTQK",
+          "price": 15.4,
+          "profit": 39.94
+        },
+        {
+          "name": "Share-IFCP",
+          "price": 29.23,
+          "profit": 39.86
+        },
+        {
+          "name": "Share-KMTG",
+          "price": 23.21,
+          "profit": 39.94
+        },
+        {
+          "name": "Share-KZBL",
+          "price": 28.99,
+          "profit": 39.12
+        },
+        {
+          "name": "Share-LGWG",
+          "price": 31.41,
+          "profit": 39.48
+        },
+        {
+          "name": "Share-LPDM",
+          "price": 39.35,
+          "profit": 39.72
+        },
+        {
+          "name": "Share-LRBZ",
+          "price": 32.9,
+          "profit": 39.94
+        },
+        {
+          "name": "Share-MLGM",
+          "price": 0.01,
+          "profit": 0.0
+        },
+        {
+          "name": "Share-MTLR",
+          "price": 16.48,
+          "profit": 39.93
+        },
+        {
+          "name": "Share-NHWA",
+          "price": 29.18,
+          "profit": 39.75
+        },
+        {
+          "name": "Share-QLMK",
+          "price": 17.38,
+          "profit": 39.47
+        },
+        {
+          "name": "Share-QQTU",
+          "price": 33.19,
+          "profit": 39.59
+        },
+        {
+          "name": "Share-SKKC",
+          "price": 24.87,
+          "profit": 39.49
+        },
+        {
+          "name": "Share-UEZB",
+          "price": 24.87,
+          "profit": 39.4
+        },
+        {
+          "name": "Share-USSR",
+          "price": 25.62,
+          "profit": 39.54
+        },
+        {
+          "name": "Share-WPLI",
+          "price": 34.64,
+          "profit": 39.9
+        },
+        {
+          "name": "Share-XJMO",
+          "price": 9.39,
+          "profit": 39.94
+        },
+        {
+          "name": "Share-ZSDE",
+          "price": 15.11,
+          "profit": 39.84
+        }
+      ],
+      "cost": 499.95,
+      "returns": 198.43
+    },
+    {
+      "algorithm": "greedy",
+      "execution_time": 0.001,
+      "items": [
+        {
+          "name": "Share-CBNY",
+          "price": 1.22,
+          "profit": 38.52
+        },
+        {
+          "name": "Share-GRUT",
+          "price": 498.76,
+          "profit": 39.42
+        },
+        {
+          "name": "Share-MLGM",
+          "price": 0.01,
+          "profit": 0.0
+        }
+      ],
+      "cost": 499.99,
+      "returns": 197.08
+    }
+  ],
+  "dataset_2": [
+    {
+      "algorithm": "dynamic_programming",
+      "execution_time": 51.038,
+      "items": [
+        {
+          "name": "Share-ALIY",
+          "price": 29.08,
+          "profit": 39.92
+        },
+        {
+          "name": "Share-ANFX",
+          "price": 38.54,
+          "profit": 39.7
+        },
+        {
+          "name": "Share-DWSK",
+          "price": 29.49,
+          "profit": 39.34
+        },
+        {
+          "name": "Share-ECAQ",
+          "price": 31.66,
+          "profit": 39.48
+        },
+        {
+          "name": "Share-FAPS",
+          "price": 32.57,
+          "profit": 39.51
+        },
+        {
+          "name": "Share-FWBE",
+          "price": 18.3,
+          "profit": 39.78
+        },
+        {
+          "name": "Share-IXCI",
+          "price": 26.32,
+          "profit": 39.4
+        },
+        {
+          "name": "Share-JGTW",
+          "price": 35.29,
+          "profit": 39.42
+        },
+        {
+          "name": "Share-JWGF",
+          "price": 48.69,
+          "profit": 39.93
+        },
+        {
+          "name": "Share-LFXB",
+          "price": 14.83,
+          "profit": 39.78
+        },
+        {
+          "name": "Share-LXZU",
+          "price": 4.24,
+          "profit": 39.39
+        },
+        {
+          "name": "Share-NDKR",
+          "price": 33.06,
+          "profit": 39.9
+        },
+        {
+          "name": "Share-PATS",
+          "price": 27.7,
+          "profit": 39.96
+        },
+        {
+          "name": "Share-PLLK",
+          "price": 19.94,
+          "profit": 39.87
+        },
+        {
+          "name": "Share-ROOM",
+          "price": 15.06,
+          "profit": 39.18
+        },
+        {
+          "name": "Share-SCWM",
+          "price": 6.42,
+          "profit": 38.01
+        },
+        {
+          "name": "Share-VCAX",
+          "price": 27.42,
+          "profit": 38.99
+        },
+        {
+          "name": "Share-XQII",
+          "price": 13.42,
+          "profit": 39.49
+        },
+        {
+          "name": "Share-YFVZ",
+          "price": 22.55,
+          "profit": 39.07
+        },
+        {
+          "name": "Share-ZOFA",
+          "price": 25.32,
+          "profit": 39.77
+        }
+      ],
+      "cost": 499.9,
+      "returns": 197.87
+    },
+    {
+      "algorithm": "optimized_dynamic_programming",
+      "execution_time": 4.504,
+      "items": [
+        {
+          "name": "Share-ALIY",
+          "price": 29.08,
+          "profit": 39.92
+        },
+        {
+          "name": "Share-ANFX",
+          "price": 38.54,
+          "profit": 39.7
+        },
+        {
+          "name": "Share-DWSK",
+          "price": 29.49,
+          "profit": 39.34
+        },
+        {
+          "name": "Share-ECAQ",
+          "price": 31.66,
+          "profit": 39.48
+        },
+        {
+          "name": "Share-FAPS",
+          "price": 32.57,
+          "profit": 39.51
+        },
+        {
+          "name": "Share-FWBE",
+          "price": 18.3,
+          "profit": 39.78
+        },
+        {
+          "name": "Share-IXCI",
+          "price": 26.32,
+          "profit": 39.4
+        },
+        {
+          "name": "Share-JGTW",
+          "price": 35.29,
+          "profit": 39.42
+        },
+        {
+          "name": "Share-JWGF",
+          "price": 48.69,
+          "profit": 39.93
+        },
+        {
+          "name": "Share-LFXB",
+          "price": 14.83,
+          "profit": 39.78
+        },
+        {
+          "name": "Share-LXZU",
+          "price": 4.24,
+          "profit": 39.39
+        },
+        {
+          "name": "Share-NDKR",
+          "price": 33.06,
+          "profit": 39.9
+        },
+        {
+          "name": "Share-PATS",
+          "price": 27.7,
+          "profit": 39.96
+        },
+        {
+          "name": "Share-PLLK",
+          "price": 19.94,
+          "profit": 39.87
+        },
+        {
+          "name": "Share-ROOM",
+          "price": 15.06,
+          "profit": 39.18
+        },
+        {
+          "name": "Share-SCWM",
+          "price": 6.42,
+          "profit": 38.01
+        },
+        {
+          "name": "Share-VCAX",
+          "price": 27.42,
+          "profit": 38.99
+        },
+        {
+          "name": "Share-XQII",
+          "price": 13.42,
+          "profit": 39.49
+        },
+        {
+          "name": "Share-YFVZ",
+          "price": 22.55,
+          "profit": 39.07
+        },
+        {
+          "name": "Share-ZOFA",
+          "price": 25.32,
+          "profit": 39.77
+        }
+      ],
+      "cost": 499.9,
+      "returns": 197.87
+    },
+    {
+      "algorithm": "greedy",
+      "execution_time": 0.001,
+      "items": [
+        {
+          "name": "Share-ANFX",
+          "price": 38.54,
+          "profit": 39.7
+        },
+        {
+          "name": "Share-DLNE",
+          "price": 44.06,
+          "profit": 36.72
+        },
+        {
+          "name": "Share-DYVD",
+          "price": 0.28,
+          "profit": 7.14
+        },
+        {
+          "name": "Share-FWMV",
+          "price": 41.68,
+          "profit": 35.8
+        },
+        {
+          "name": "Share-HATC",
+          "price": 43.45,
+          "profit": 34.13
+        },
+        {
+          "name": "Share-IJFT",
+          "price": 40.9,
+          "profit": 38.88
+        },
+        {
+          "name": "Share-JWGF",
+          "price": 48.69,
+          "profit": 39.93
+        },
+        {
+          "name": "Share-LKSD",
+          "price": 0.12,
+          "profit": 8.33
+        },
+        {
+          "name": "Share-MALJ",
+          "price": 46.37,
+          "profit": 32.87
+        },
+        {
+          "name": "Share-MBQU",
+          "price": 51.46,
+          "profit": 35.78
+        },
+        {
+          "name": "Share-OPBR",
+          "price": 39.0,
+          "profit": 38.95
+        },
+        {
+          "name": "Share-QEVK",
+          "price": 49.77,
+          "profit": 34.38
+        },
+        {
+          "name": "Share-XGNC",
+          "price": 41.86,
+          "profit": 35.12
+        },
+        {
+          "name": "Share-XQII",
+          "price": 13.42,
+          "profit": 39.49
+        }
+      ],
+      "cost": 499.6,
+      "returns": 182.55
+    }
+  ]
+}

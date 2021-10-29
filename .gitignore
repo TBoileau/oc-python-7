@@ -137,4 +137,5 @@ dmypy.json
 cython_debug/
 *.json
 !fixtures.json
+!docs/*.json
 prof/

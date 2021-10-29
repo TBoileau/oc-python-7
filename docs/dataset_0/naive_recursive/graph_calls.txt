@@ -1,0 +1,15 @@
+Dataset : dataset_0
+Algorithm : naive_recursive
+Graph calls
+         2630368 function calls (813350 primitive calls) in 0.876 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.876    0.876 naive_recursive.py:17(resolve)
+1817019/1    0.841    0.000    0.876    0.876 naive_recursive.py:20(__recursive)
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.len}
+   813346    0.036    0.000    0.036    0.000 {method 'append' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+
+

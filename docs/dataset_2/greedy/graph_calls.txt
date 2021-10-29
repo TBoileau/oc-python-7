@@ -1,0 +1,16 @@
+Dataset : dataset_2
+Algorithm : greedy
+Graph calls
+         1637 function calls in 0.001 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.001    0.001 greedy.py:17(resolve)
+     1080    0.000    0.000    0.000    0.000 item.py:21(ratio)
+      540    0.000    0.000    0.000    0.000 item.py:29(__lt__)
+       14    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        1    0.000    0.000    0.000    0.000 {method 'sort' of 'list' objects}
+
+

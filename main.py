@@ -24,9 +24,9 @@ def graph_calls(profile: cProfile.Profile, dataset: str, algorithm: str):
     print(f'Graph calls')
     profile.print_stats()
     output = stream.getvalue()
-    output.replace(os.path.normpath(os.path.join(os.getcwd(), "..", "..", "..", "profiles")), "")
+    output.replace(os.path.normpath(os.path.join(os.getcwd(), "..", "..", "..", "docs")), "")
     output.replace(sys.base_prefix, "").replace("\\", "/")
-    file = open(os.path.join(os.getcwd(), 'profiles', dataset, algorithm, 'graph_calls.txt'), 'w')
+    file = open(os.path.join(os.getcwd(), 'docs', dataset, algorithm, 'graph_calls.txt'), 'w')
     file.write(output)
     file.close()
 
@@ -35,18 +35,18 @@ def visualization(profile: cProfile.Profile, dataset: str, algorithm: str):
     stream = io.StringIO()
     stats = pstats.Stats(profile, stream=stream).sort_stats('cumulative')
     stats.print_stats()
-    rem = os.path.normpath(os.path.join(os.getcwd(), "..", "..", "..", "profiles"))
+    rem = os.path.normpath(os.path.join(os.getcwd(), "..", "..", "..", "docs"))
     res = stream.getvalue().replace(rem, "")
     res.replace(sys.base_prefix, "").replace("\\", "/")
     try:
-        os.mkdir(os.path.join(os.getcwd(), 'profiles', dataset))
+        os.mkdir(os.path.join(os.getcwd(), 'docs', dataset))
     except:
         pass
     try:
-        os.mkdir(os.path.join(os.getcwd(), 'profiles', dataset, algorithm))
+        os.mkdir(os.path.join(os.getcwd(), 'docs', dataset, algorithm))
     except:
         pass
-    stats.dump_stats(os.path.join(os.getcwd(), 'profiles', dataset, algorithm, 'profile.prof'))
+    stats.dump_stats(os.path.join(os.getcwd(), 'docs', dataset, algorithm, 'profile.prof'))
     stats.print_stats()
 
 if __name__ == '__main__':

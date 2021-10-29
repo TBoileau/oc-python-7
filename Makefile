@@ -36,24 +36,24 @@ clean:
 	rm -rf __pycache__
 	rm -rf .pytest_cache
 	rm -rf htmlcov
-	rm -rf profiles/dataset_*
-	rm -rf profiles/*.json
+	rm -rf docs/dataset_*
+	rm -rf docs/*.json
 
 profile:
-	$(PYTHON) -m gprof2dot -f pstats profiles/dataset_0/greedy/profile.prof | dot -Tpng -o profiles/dataset_0/greedy/graph_calls.png
-	$(PYTHON) -m gprof2dot -f pstats profiles/dataset_0/dynamic_programming/profile.prof | dot -Tpng -o profiles/dataset_0/dynamic_programming/graph_calls.png
-	$(PYTHON) -m gprof2dot -f pstats profiles/dataset_0/optimized_dynamic_programming/profile.prof | dot -Tpng -o profiles/dataset_0/optimized_dynamic_programming/graph_calls.png
-	$(PYTHON) -m gprof2dot -f pstats profiles/dataset_0/naive_recursive/profile.prof | dot -Tpng -o profiles/dataset_0/naive_recursive/graph_calls.png
-	$(PYTHON) -m gprof2dot -f pstats profiles/dataset_0/memoization_technique/profile.prof | dot -Tpng -o profiles/dataset_0/memoization_technique/graph_calls.png
+	$(PYTHON) -m gprof2dot -f pstats docs/dataset_0/greedy/profile.prof | dot -Tpng -o docs/dataset_0/greedy/graph_calls.png
+	$(PYTHON) -m gprof2dot -f pstats docs/dataset_0/dynamic_programming/profile.prof | dot -Tpng -o docs/dataset_0/dynamic_programming/graph_calls.png
+	$(PYTHON) -m gprof2dot -f pstats docs/dataset_0/optimized_dynamic_programming/profile.prof | dot -Tpng -o docs/dataset_0/optimized_dynamic_programming/graph_calls.png
+	$(PYTHON) -m gprof2dot -f pstats docs/dataset_0/naive_recursive/profile.prof | dot -Tpng -o docs/dataset_0/naive_recursive/graph_calls.png
+	$(PYTHON) -m gprof2dot -f pstats docs/dataset_0/memoization_technique/profile.prof | dot -Tpng -o docs/dataset_0/memoization_technique/graph_calls.png
 
-	$(PYTHON) -m gprof2dot -f pstats profiles/dataset_1/greedy/profile.prof | dot -Tpng -o profiles/dataset_1/greedy/graph_calls.png
-	$(PYTHON) -m gprof2dot -f pstats profiles/dataset_1/dynamic_programming/profile.prof | dot -Tpng -o profiles/dataset_1/dynamic_programming/graph_calls.png
-	$(PYTHON) -m gprof2dot -f pstats profiles/dataset_1/optimized_dynamic_programming/profile.prof | dot -Tpng -o profiles/dataset_1/optimized_dynamic_programming/graph_calls.png
+	$(PYTHON) -m gprof2dot -f pstats docs/dataset_1/greedy/profile.prof | dot -Tpng -o docs/dataset_1/greedy/graph_calls.png
+	$(PYTHON) -m gprof2dot -f pstats docs/dataset_1/dynamic_programming/profile.prof | dot -Tpng -o docs/dataset_1/dynamic_programming/graph_calls.png
+	$(PYTHON) -m gprof2dot -f pstats docs/dataset_1/optimized_dynamic_programming/profile.prof | dot -Tpng -o docs/dataset_1/optimized_dynamic_programming/graph_calls.png
 
-	$(PYTHON) -m gprof2dot -f pstats profiles/dataset_2/greedy/profile.prof | dot -Tpng -o profiles/dataset_2/greedy/graph_calls.png
-	$(PYTHON) -m gprof2dot -f pstats profiles/dataset_2/dynamic_programming/profile.prof | dot -Tpng -o profiles/dataset_2/dynamic_programming/graph_calls.png
-	$(PYTHON) -m gprof2dot -f pstats profiles/dataset_2/optimized_dynamic_programming/profile.prof | dot -Tpng -o profiles/dataset_2/optimized_dynamic_programming/graph_calls.png
+	$(PYTHON) -m gprof2dot -f pstats docs/dataset_2/greedy/profile.prof | dot -Tpng -o docs/dataset_2/greedy/graph_calls.png
+	$(PYTHON) -m gprof2dot -f pstats docs/dataset_2/dynamic_programming/profile.prof | dot -Tpng -o docs/dataset_2/dynamic_programming/graph_calls.png
+	$(PYTHON) -m gprof2dot -f pstats docs/dataset_2/optimized_dynamic_programming/profile.prof | dot -Tpng -o docs/dataset_2/optimized_dynamic_programming/graph_calls.png
 
 visualization:
-	$(PYTHON) -m cprofilev -f profiles/dataset_$(dataset)/$(algorithm).prof
+	$(PYTHON) -m cprofilev -f docs/dataset_$(dataset)/$(algorithm).prof
 

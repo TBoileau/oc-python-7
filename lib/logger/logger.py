@@ -17,7 +17,7 @@ class Logger(LoggerInterface):
 
 
     def write(self):
-        with open(f"profiles/results.json", 'a') as file:
+        with open(f"docs/results.json", 'a') as file:
             file.write(
                 json.dumps(self.datasets)
             )

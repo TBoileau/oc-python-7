@@ -1,0 +1,22 @@
+Dataset : dataset_0
+Algorithm : memoization_technique
+Graph calls
+         8930715 function calls (6063634 primitive calls) in 3.460 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+1050043/1    0.681    0.000    1.221    1.221 copy.py:128(deepcopy)
+  1050021    0.055    0.000    0.055    0.000 copy.py:182(_deepcopy_atomic)
+     22/1    0.246    0.011    1.221    1.221 copy.py:200(_deepcopy_list)
+       22    0.000    0.000    0.000    0.000 copy.py:242(_keep_alive)
+        1    0.000    0.000    3.477    3.477 memoization_technique.py:18(resolve)
+        1    0.000    0.000    0.017    0.017 memoization_technique.py:19(<listcomp>)
+1817019/1    2.163    0.000    2.239    2.239 memoization_technique.py:23(__recursive)
+  1050088    0.059    0.000    0.059    0.000 {built-in method builtins.id}
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.len}
+  1863409    0.133    0.000    0.133    0.000 {method 'append' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+  2100086    0.124    0.000    0.124    0.000 {method 'get' of 'dict' objects}
+
+

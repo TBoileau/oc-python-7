@@ -176,7 +176,11 @@
         );
     }
 
-    fetch('results.json')
+    const url = location.hostname === "localhost" || location.hostname === "127.0.0.1"
+        ? 'results.json'
+        : 'https://raw.githubusercontent.com/TBoileau/oc-python-7/develop/docs/results.json';
+
+    fetch(url)
         .then((response) => response.json())
         .then((datasets) => {
             for (const dataset in datasets) {
